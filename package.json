@@ -1,0 +1,32 @@
+{
+  "name": "@time-loop/unique-queue",
+  "description": "A simple queue which lowers the chances of scheduling messages with the same key twice.",
+  "version": "2.10.291",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc.sh",
+    "dev": "tight-loop.sh tsc.sh --watch",
+    "lint": "lint.sh",
+    "test": "test.sh",
+    "prepack": "yarn build"
+  },
+  "dependencies": {
+    "@swc/helpers": "^0.4.14",
+    "delay": "^4.4.1",
+    "p-defer": "^3.0.0"
+  },
+  "devDependencies": {
+    "wait-for-expect": "^3.0.2"
+  },
+  "peerDependencies": {
+    "ioredis": "^5.3.2",
+    "lodash": "^4.17.21"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/time-loop/github-packages"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
+}
